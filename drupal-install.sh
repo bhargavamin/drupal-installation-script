@@ -16,9 +16,9 @@ echo "============================================"
 echo "Configuring MySQL server"
 echo "============================================"
 
-sudo /usr/libexec/mysql55/mysqladmin -u root password 'root@123'
+sudo /usr/libexec/mysql55/mysqladmin -u root password '<mysql-root-password>'
 # Creating a mysql database
-mysql -u root -proot@123 -e "CREATE USER drupal@'localhost' IDENTIFIED BY 'drupaluser@28june'; create database drupal_summit; GRANT ALL PRIVILEGES ON drupal_summit.* TO drupal@localhost IDENTIFIED BY 'drupaluser@28june';FLUSH PRIVILEGES;"
+mysql -u root -p<mysql-root-password> -e "CREATE USER drupal@'localhost' IDENTIFIED BY '<drupal-password>'; create database drupal; GRANT ALL PRIVILEGES ON drupal.* TO drupal@localhost IDENTIFIED BY '<drupal-password>';FLUSH PRIVILEGES;"
 
 echo "============================================"
 echo "Installing Drupal 8.."
