@@ -57,5 +57,5 @@ echo "========================="
 echo "Installation is complete."
 echo "========================="
 
-echo " Please note your MySQL Root password : root@123"
-echo " MySQL "Drupal" user password : drupaluser@28june"
+echo " Please note your MySQL Root password : <mysql-root-password>"
+echo " MySQL "Drupal" user password : <drupal-db-password>"
